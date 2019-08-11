@@ -2,14 +2,14 @@
 
 
 #getting the input from the user
-user_input = float(input("Enter a number greater than Two:"))
+user_input = float(input("Enter a number greater than 2:"))
 
 #set three variables with the value 1
 first_var=second_var=third_var=1
 
 # Option to handle invalid entries
 if user_input < 3:
-    print("You did not enter a value greater than Two")
+    print("You did not enter a value greater than 2")
 else:
     #print the first digit of the Fibonacci sequence
     print (third_var)
