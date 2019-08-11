@@ -1,0 +1,29 @@
+# Code for listing Fibonacci sequence upto the value provided by the user i.e if user inputs 10, the result is 1,1,2,3,5,8
+
+
+#getting the input from the user
+user_input = float(input("Enter a number greater than Two:"))
+
+#set three variables with the value 1
+first_var=second_var=third_var=1
+
+# Option to handle invalid entries
+if user_input < 3:
+    print("You did not enter a value greater than Two")
+else:
+    #print the first digit of the Fibonacci sequence
+    print (third_var)
+    
+    #Using the third variable to both to control the loop & also help shift the values.
+    while third_var <= user_input:
+    
+        
+        #iteration till the list reaches lesser than or equal to the value entered by the user
+        
+        print(third_var)
+        
+        third_var = first_var + second_var
+      
+        #logic is to shift the digits using the third variable so the iteration can be done.
+        first_var = second_var 
+        second_var = third_var
